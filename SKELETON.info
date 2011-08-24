@@ -1,0 +1,7 @@
+name = ***HUMAN_NAME***
+core = 7.x
+
+dependencies[] = block
+dependencies[] = dblog
+
+files[] = ***MACHINE_NAME***.profile
