@@ -1,0 +1,11 @@
+name = ***HUMAN_NAME***
+description = Default theme for ***HUMAN_NAME***
+
+engine = phptemplate
+
+core = 7.x
+php = 5.2
+
+stylesheets[all][] = layout.css
+
+base theme = mothership
