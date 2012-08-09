@@ -1,4 +1,5 @@
 name = ***HUMAN_NAME***
+description = Install site for ***HUMAN_NAME***
 core = 7.x
 
 dependencies[] = block
