@@ -7,7 +7,8 @@
  */
 function ***MACHINE_NAME***_install() {
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
+  $default_theme = 'basic';
+  variable_set('theme_default', $default_theme);
   
   $values = array(
     array(
