@@ -8,4 +8,6 @@ dependencies[] = dblog
 dependencies[] = kw_manifests
 dependencies[] = features
 
+env_dependencies[development][] = field_ui
+
 files[] = ***MACHINE_NAME***.profile
