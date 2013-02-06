@@ -5,4 +5,7 @@ core = 7.x
 dependencies[] = block
 dependencies[] = dblog
 
+dependencies[] = kw_manifests
+dependencies[] = features
+
 files[] = ***MACHINE_NAME***.profile
