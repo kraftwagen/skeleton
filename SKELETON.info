@@ -9,5 +9,6 @@ dependencies[] = kw_manifests
 dependencies[] = features
 
 env_dependencies[development][] = field_ui
+env_dependencies[development][] = strongarm
 
 files[] = ***MACHINE_NAME***.profile
