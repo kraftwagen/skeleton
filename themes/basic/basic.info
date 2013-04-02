@@ -2,8 +2,8 @@ name = ***HUMAN_NAME***
 description = Default theme for ***HUMAN_NAME***
 
 engine = phptemplate
-
+base theme = kalatheme
 core = 7.x
 php = 5.2
 
-stylesheets[all][] = layout.css
+stylesheets[all][] = styles.css
