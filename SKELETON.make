@@ -56,3 +56,9 @@ projects[uuid][download][type] = git
 projects[uuid][download][revision] = 4730c67
 projects[uuid][download][branch] = 7.x-1.x
 projects[uuid][patch][1605284] = http://drupal.org/files/1605284-define-types-for-tokens-6.patch
+
+; The Panopoly Kalatheme
+projects[kalatheme][version] = 1.0-rc3
+projects[kalatheme][subdir] = contrib
+libraries[bootstrap][download][type] = get
+libraries[bootstrap][download][url] = http://twitter.github.com/bootstrap/assets/bootstrap.zip
