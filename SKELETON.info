@@ -2,13 +2,42 @@ name = ***HUMAN_NAME***
 description = Install site for ***HUMAN_NAME***
 core = 7.x
 
-dependencies[] = block
-dependencies[] = dblog
+files[] = ***MACHINE_NAME***.profile
 
 dependencies[] = kw_manifests
 dependencies[] = features
 
-env_dependencies[development][] = field_ui
-env_dependencies[development][] = strongarm
+; Drupal Core
+dependencies[] = menu
+dependencies[] = image
+dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = dblog
+dependencies[] = update
 
-files[] = ***MACHINE_NAME***.profile
+; Panopoly Foundation
+dependencies[] = panopoly_core
+dependencies[] = panopoly_images
+dependencies[] = panopoly_theme
+dependencies[] = panopoly_magic
+dependencies[] = panopoly_widgets
+dependencies[] = panopoly_admin
+dependencies[] = panopoly_users
+
+; Panopoly Toolset
+dependencies[] = panopoly_pages
+dependencies[] = panopoly_search
+dependencies[] = panopoly_wysiwyg
+
+; Panopoly Recommended
+dependencies[] = navbar
+dependencies[] = devel
+dependencies[] = uuid
