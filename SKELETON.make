@@ -13,7 +13,7 @@ projects[kw_itemnames][subdir] = "kraftwagen"
 
 projects[token][version]           = "1.5"
 projects[token][subdir]            = "contrib"
-projects[entity][version]          = "1.1"
+projects[entity][version]          = "1.2"
 projects[entity][subdir]           = "contrib"
 projects[ctools][version]          = "1.3"
 projects[ctools][subdir]           = "contrib"
