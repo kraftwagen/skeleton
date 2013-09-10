@@ -46,7 +46,7 @@ projects[panopoly_search][version] = 1.0-rc5
 projects[panopoly_search][subdir] = panopoly
 
 ; The Panopoly Kalatheme
-projects[kalatheme][version] = 1.0
+projects[kalatheme][version] = 1.1
 projects[kalatheme][subdir] = contrib
 libraries[bootstrap][download][type] = get
 libraries[bootstrap][download][url] = http://twitter.github.com/bootstrap/assets/bootstrap.zip
