@@ -45,8 +45,8 @@ projects[panopoly_wysiwyg][subdir] = panopoly
 projects[panopoly_search][version] = 1.0-rc5
 projects[panopoly_search][subdir] = panopoly
 
-; The Panopoly Kalatheme
-projects[kalatheme][version] = 1.2
-projects[kalatheme][subdir] = contrib
-libraries[bootstrap][download][type] = file
-libraries[bootstrap][download][url] = http://getbootstrap.com/2.3.2/assets/bootstrap.zip
+; The Panopoly Radix
+projects[radix_core][download][type] = git
+projects[radix_core][download][revision] = 472330c
+projects[radix_core][download][branch] = 7.x-1.x
+projects[radix_core][patch][] = https://drupal.org/files/issues/radix_core-update_radix_theme.patch
