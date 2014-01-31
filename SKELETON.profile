@@ -29,9 +29,17 @@ function ***MACHINE_NAME***_form_install_configure_form_alter(&$form, $form_stat
 function ***MACHINE_NAME***_install_tasks(&$install_state) {
   $tasks = array();
 
+  // Add our custom CSS file for the installation process
+  drupal_add_css(drupal_get_path('profile', '***MACHINE_NAME***') . '/panopoly.css');
+
   // Add the Panopoly app selection to the installation process
+  $panopoly_server = array(
+    'machine name' => 'panopoly',
+    'default apps' => array('panopoly_demo'),
+    'default content callback' => '***MACHINE_NAME***_default_content',
+  );
   require_once(drupal_get_path('module', 'apps') . '/apps.profile.inc');
-  $tasks = $tasks + apps_profile_install_tasks($install_state, array('machine name' => 'panopoly', 'default apps' => array('panopoly_demo')));
+  $tasks = $tasks + apps_profile_install_tasks($install_state, $panopoly_server);
 
   return $tasks;
 }
@@ -63,7 +71,31 @@ function ***MACHINE_NAME***_form_apps_profile_apps_select_form_alter(&$form, $fo
       }
     }
   }
+}
 
-  // Remove the demo content selection option since this is handled through the Panopoly demo module.
-  $form['default_content_fieldset']['#access'] = FALSE;
+/**
+ * Apps installer default content callback.
+ */
+function ***MACHINE_NAME***_default_content(&$modules) {
+  // TODO: It would be better to figure out which apps have demo content
+  // modules by looking at the app manifest. Unfortunately, this doesn't qute
+  // work because the manifest doesn't know about the default content module
+  // until the app has actually been enabled, since that data only comes in
+  // from hook_apps_app_info().
+  //
+  // apps_include('manifest');
+  // $apps = apps_apps('panopoly');
+  // foreach ($modules as $module) {
+  //   if (!empty($apps[$module]['demo content module'])) {
+  //     $modules[] = $apps[$module]['demo content module'];
+  //   }
+  // }
+  //
+  // This workaround assumes a pattern MYMODULE_demo.
+  $files = system_rebuild_module_data();
+  foreach($modules as $module) {
+    if (isset($files[$module . '_demo'])) {
+      $modules[] = $module . '_demo';
+    }
+  }
 }
