@@ -45,6 +45,9 @@ dependencies[] = save_draft
 dependencies[] = module_filter
 dependencies[] = date_popup_authored
 
+; Panopoly Radix
+dependencies[] = radix_core
+
 ; Panopoly Recommended - Other
 dependencies[] = devel
 dependencies[] = uuid
