@@ -1,10 +1,8 @@
 name = ***HUMAN_NAME***
 description = Install site for ***HUMAN_NAME***
 distribution_name = ***HUMAN_NAME***
-exclusive = 1
 core = 7.x
-
-files[] = ***MACHINE_NAME***.profile
+exclusive = 1
 
 dependencies[] = kw_manifests
 dependencies[] = features
@@ -51,7 +49,9 @@ dependencies[] = views_ui
 
 ; Panopoly Radix
 dependencies[] = radix_layouts
-dependencies[] = radix_colorizer
+;dependencies[] = radix_admin
+;dependencies[] = radix_views
+;dependencies[] = radix_colorizer
 
 ; Panopoly Recommended - Other
 dependencies[] = devel
