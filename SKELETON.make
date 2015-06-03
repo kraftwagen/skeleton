@@ -51,8 +51,8 @@ projects[panopoly_test][version] = 1.21
 projects[panopoly_test][subdir] = panopoly
 
 ; The Panopoly Radix
-projects[radix][version] = 3.0-beta1
-projects[radix_layouts][version] = 3.0-alpha2
+projects[radix][version] = 3.0-rc2
+projects[radix_layouts][version] = 3.3
 projects[radix_layouts][subdir] = radix
 ;projects[radix_admin][version] = 3.x-dev
 ;projects[radix_admin][subdir] = radix
