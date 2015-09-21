@@ -51,12 +51,17 @@ projects[panopoly_test][version] = 1.21
 projects[panopoly_test][subdir] = panopoly
 
 ; The Panopoly Radix
-projects[radix][version] = 3.0-rc2
-projects[radix_layouts][version] = 3.3
-projects[radix_layouts][subdir] = radix
+;projects[radix_layouts][version] = 3.3
+;projects[radix_layouts][subdir] = radix
 ;projects[radix_admin][version] = 3.x-dev
 ;projects[radix_admin][subdir] = radix
 ;projects[radix_views][version] = 3.x-dev
 ;projects[radix_views][subdir] = radix
 ;projects[radix_colorizer][version] = 1.x-dev
 ;projects[radix_colorizer][subdir] = radix
+
+; Tallerini base theme
+projects[tallerini][type] = "theme"
+projects[tallerini][download][type] = "git"
+projects[tallerini][download][url] = "git://github.com/TallerWebSolutions/tallerini.git"
+projects[tallerini][subdir] = "kraftwagen"
