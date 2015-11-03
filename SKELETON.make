@@ -18,7 +18,7 @@ projects[entity][subdir]           = "contrib"
 projects[ctools][version]          = "1.3"
 projects[ctools][subdir]           = "contrib"
 
-projects[features][version]        = "1.0"
+projects[features][version]        = "2.7"
 projects[features][subdir]         = "contrib"
 projects[strongarm][version]       = "2.0"
 projects[strongarm][subdir]        = "contrib"
